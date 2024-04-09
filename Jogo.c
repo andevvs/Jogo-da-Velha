@@ -50,31 +50,32 @@ int main(){
             jogadas++;
 
             //ganhou por linha
-            if(jogo[0][0] == '0' && jogo[0][1] == '0' && jogo[0][2] == '0' ||
-               jogo[1][0] == '0' && jogo[1][1] == '0' && jogo[1][2] == '0' ||
-               jogo[2][0] == '0' && jogo[2][1] == '0' && jogo[2][2] == '0'){
+            if ((jogo[0][0] == '0' && jogo[0][1] == '0' && jogo[0][2] == '0') ||
+                (jogo[1][0] == '0' && jogo[1][1] == '0' && jogo[1][2] == '0') ||
+                (jogo[2][0] == '0' && jogo[2][1] == '0' && jogo[2][2] == '0')) {
                 printf("\nParabens! O jogador 1 venceu por linha!\n");
                 ganhou = 1;
             }
 
-            if(jogo[0][0] == 'X' && jogo[0][1] == 'X' && jogo[0][2] == 'X' ||
-               jogo[1][0] == 'X' && jogo[1][1] == 'X' && jogo[1][2] == 'X' ||
-               jogo[2][0] == 'X' && jogo[2][1] == 'X' && jogo[2][2] == 'X'){
+
+            if((jogo[0][0] == 'X' && jogo[0][1] == 'X' && jogo[0][2] == 'X') ||
+               (jogo[1][0] == 'X' && jogo[1][1] == 'X' && jogo[1][2] == 'X') ||
+               (jogo[2][0] == 'X' && jogo[2][1] == 'X' && jogo[2][2] == 'X')){
                 printf("\nParabens! O jogador 2 venceu por linha!\n");
                 ganhou = 1;
             }
 
             //ganhou por coluna
-            if(jogo[0][0] == '0' && jogo[1][0] == '0' && jogo[2][0] == '0' ||
-               jogo[0][1] == '0' && jogo[1][1] == '0' && jogo[2][1] == '0' ||
-               jogo[0][2] == '0' && jogo[1][2] == '0' && jogo[2][2] == '0'){
+            if((jogo[0][0] == '0' && jogo[1][0] == '0' && jogo[2][0] == '0') ||
+               (jogo[0][1] == '0' && jogo[1][1] == '0' && jogo[2][1] == '0') ||
+               (jogo[0][2] == '0' && jogo[1][2] == '0' && jogo[2][2] == '0')){
                 printf("\nParabens! O jogador 1 venceu por coluna!\n");
                 ganhou = 1;
             }
 
-            if(jogo[0][0] == 'X' && jogo[1][0] == 'X' && jogo[2][0] == 'X' ||
-               jogo[0][1] == 'X' && jogo[1][1] == 'X' && jogo[2][1] == 'X' ||
-               jogo[0][2] == 'X' && jogo[1][2] == 'X' && jogo[2][2] == 'X'){
+            if((jogo[0][0] == 'X' && jogo[1][0] == 'X' && jogo[2][0] == 'X') ||
+               (jogo[0][1] == 'X' && jogo[1][1] == 'X' && jogo[2][1] == 'X') ||
+               (jogo[0][2] == 'X' && jogo[1][2] == 'X' && jogo[2][2] == 'X')){
                 printf("\nParabens! O jogador 2 venceu por coluna!\n");
                 ganhou = 1;
             }
