@@ -6,7 +6,7 @@ int main(){
     int l, c, linha, coluna, jogador, ganhou, jogadas, opcao;
     char jogo[3][3];
 
-    do{ // deseja jogar novamente?
+    do{ //jogar novamente?
         jogador = 1;
         ganhou = 0;
         jogadas = 0;
@@ -16,7 +16,7 @@ int main(){
             }
         }
 
-        do{ // repete até alguém ganhar ou atingir 9 jogadas
+        do{ //repete até alguém ganhar ou atingir 9 jogadas
             printf("\n\n\t 0   1   2\n\n");
             for(l = 0; l < 3; l++){
                 for(c = 0; c < 3; c++){
@@ -102,7 +102,7 @@ int main(){
             }
         }while(ganhou == 0 && jogadas < 9);
 
-        // imprimir jogo
+        //imprimir jogo
         printf("\n\n\t 0   1   2\n\n");
         for(l = 0; l < 3; l++){
             for(c = 0; c < 3; c++){
